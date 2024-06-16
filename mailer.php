@@ -13,15 +13,15 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'tindwahamadi@gmail.com';                     //SMTP username
-    $mail->Password   = 'vqgo thlw eygc vjxx';                               //SMTP password
+    $mail->Username   = 'write your email here';                     //SMTP username
+    $mail->Password   = 'write your password here';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('tindwahamadi@gmail.com', 'BEST E-COMMERCE');
+    $mail->setFrom('write your email here', 'BEST E-COMMERCE');
     $mail->addAddress($email);
-    $mail->addReplyTo('tindwahamadi@gmail.com', 'Information');
+    $mail->addReplyTo('write your email here', 'Information');
 
     //Content
     $message = "Your New Password is <br> <h2>$code</h2>";
